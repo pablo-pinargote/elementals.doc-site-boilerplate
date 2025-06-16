@@ -1,0 +1,2 @@
+elemental-cms
+Werkzeug===2.2.2

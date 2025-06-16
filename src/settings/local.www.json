@@ -1,0 +1,36 @@
+{
+  "cmsCoreContext": {
+    "DEBUG": true,
+    "ENV": "development",
+    "SECRET_KEY": "the-secret",
+    "SITE_NAME": "Elemental CMS",
+    "COMPANY": "Your company name",
+    "CANONICAL_URL": "https://elemental.cms",
+    "LANGUAGES": [
+      "en",
+      "es"
+    ],
+    "DEFAULT_LANGUAGE": "en",
+    "LANGUAGE_MODE": "multi",
+    "STATIC_FOLDER": "static",
+    "MEDIA_FOLDER": "media",
+    "STATIC_URL": "/static",
+    "MEDIA_URL": "/media",
+    "STATIC_BUCKET": "static-files-bucket",
+    "MEDIA_BUCKET": "media-files-bucket",
+    "GLOBAL_DEPS_FOLDER": "workspace/global_deps",
+    "PAGES_FOLDER": "workspace/pages",
+    "SNIPPETS_FOLDER": "workspace/snippets",
+    "GOOGLE_SERVICE_ACCOUNT_INFO": {
+    },
+    "USER_IDENTITY_SESSION_KEY": "userIdentity",
+    "SESSION_STORAGE_ENABLED": true,
+    "SESSION_TIMEOUT_IN_MINUTES": 360,
+    "DESIGN_MODE_ENABLED": true
+  },
+  "cmsDbContext": {
+    "id": "oreo",
+    "connectionString": "mongodb://root:pwd@localhost:9019/elemental_hello_world?directConnection=true&authSource=admin",
+    "databaseName": "elemental_hello_world"
+  }
+}

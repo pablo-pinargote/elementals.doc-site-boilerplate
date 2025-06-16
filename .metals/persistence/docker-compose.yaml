@@ -1,0 +1,17 @@
+services:
+
+  oreo:
+    container_name: oreo
+    restart: always
+    image: mongo:4.2.0
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${OREO_SA_USERNAME}
+      MONGO_INITDB_ROOT_PASSWORD: ${OREO_SA_PASSWORD}
+    ports:
+      - "9019:27017"
+    networks:
+      - main
+
+networks:
+  main:
+    external: true
